@@ -1,0 +1,116 @@
+/* * {
+    color: crimson;
+} */
+
+/* h1 {
+    color: red;
+} */
+
+/* p {
+    color: brown;
+} */
+
+/* #name1 {
+    color: violet;
+}
+
+#name2 {
+    color: green;
+}
+
+#name3 {
+    color: blue;
+} */
+
+/* .class1 {
+    color: violet;
+}
+
+.class2 {
+    color: green;
+}
+
+.class3 {
+    color: blue;
+}
+
+div p {
+    color: brown;
+} */
+
+/* selector {
+    property: value;
+} */
+
+/* selectors */
+
+/* 1. element selector */
+/* 2. id selector: # */
+/* 3. class selector */
+
+/* 
+body {
+    background-color: rgb(68, 7, 124);
+    color: rgb(120, 218, 51);
+}
+
+p {
+    background-color: red;
+    color: white;
+} */
+
+/* * {
+    font-family: "Poppins";
+}
+
+h1 {
+    color: saddlebrown;
+    font-style: italic;
+    line-height: normal;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+} */
+
+/* p {
+    background: red;
+    padding: 100px;
+    margin: 100px;
+    border: 20px solid black;
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    transition: all 5s;
+}
+
+p:hover {
+    background: green;
+    color: white;
+} */
+
+/* p:hover {
+    background: green;
+    color: white;
+} */
+
+/* content
+border
+padding
+margin */
+
+.button {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: navy;
+}
