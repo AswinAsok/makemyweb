@@ -3,60 +3,121 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Day - CSS Basics</title>
+        <title>Smile Meme</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
 
-        <link rel="stylesheet" href="styles.css" />
+            .meme-container {
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
+            .meme-container:hover {
+                transform: scale(1.1);
+            }
+
+            .face {
+                width: 150px;
+                height: 150px;
+                background-color: #ffcc00;
+                border-radius: 50%;
+                position: relative;
+                margin: 0 auto;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
+
+            .eyes {
+                position: absolute;
+                top: 40px;
+                left: 30px;
+                width: 90px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .eye {
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            /* Happy mouth */
+            .mouth {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                width: 70px;
+                height: 35px;
+                background-color: transparent;
+                border-bottom: 5px solid black;
+                border-radius: 0 0 70px 70px;
+                transition: all 0.3s ease;
+            }
+
+            /* Sad mouth (displayed on hover) */
+            .sad-mouth {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                width: 70px;
+                height: 35px;
+                background-color: transparent;
+                border-top: 5px solid black;
+                border-radius: 70px 70px 0 0;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            .meme-container:hover .mouth {
+                opacity: 0;
+            }
+
+            .meme-container:hover .sad-mouth {
+                opacity: 1;
+            }
+
+            .text {
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #333;
+                transition: all 0.3s ease;
+            }
+
+            .meme-container:hover .face {
+                background-color: #ff6666;
+            }
+
+            .meme-container .text::after {
+                content: "People enjoying BootCamp! 😊";
+            }
+
+            .meme-container:hover .text::after {
+                content: "First years remembering they have exams tomorrow 😢";
+            }
+        </style>
     </head>
     <body>
-        <!-- CSS BASIC Syntax and Selectors -->
-        <!-- <h1 name="gender" id="">Day 3</h1>
-
-        <p class="class1">Aswin</p>
-        <p class="class2">Aswin</p>
-        <p class="class3">Aswin</p>
-
-        <p>Aswin</p>
-
-        div > p
-        <div>
-            <p>MakeMyWeb</p>
+        <div class="meme-container">
+            <div class="face">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+                <div class="sad-mouth"></div>
+            </div>
+            <div class="text"></div>
         </div>
-
-        section > p
-        <section>
-            <p>MakeMyWeb</p>
-        </section> -->
-
-        <!-- White
-
-        <p>white</p>
-
-        <h1>Simply Styling Things</h1> -->
-
-        <!-- <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at animi, blanditiis
-            autem magnam corrupti et officiis nesciunt earum provident doloremque aliquam, vel omnis
-            modi aperiam nostrum totam libero quibusdam. Vitae incidunt eaque ipsam rerum rem
-            pariatur autem distinctio hic, assumenda, est omnis quasi voluptatum ducimus nulla
-            deserunt quas! Corporis, inventore.
-        </p> -->
-
-        <!-- <div>This Petti</div> -->
-        <!-- 
-        <button>Click</button> -->
-
-        <!-- test:<input type="checkbox" name="test" id="test" /> -->
-
-        <button class="button">Hello World</button>
     </body>
 </html>
-
-<!-- getElementsByClassName => HTMLCollection [] -->
-<!-- getElementsById => string returns -->
