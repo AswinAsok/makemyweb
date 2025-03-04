@@ -1,0 +1,53 @@
+.firstPTag {
+    font-size: 16px;
+    color: violet;
+}
+
+.secondPTag {
+    font-size: 2rem;
+    color: blue;
+}
+
+/* rem root em */
+
+.container {
+    height: 300px;
+
+    background-color: red;
+    color: white;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    /* 
+    arrange horizonally
+    justify-content: space-around; */
+
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+
+    /* what is the default direction of flex */
+}
+
+/* @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        background-color: aqua;
+    }
+} */
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: column;
+        background-color: aqua;
+    }
+}
+
+.container div {
+    background-color: blue;
+    width: 100%;
+
+    min-width: 5rem;
+}
