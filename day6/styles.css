@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.dot-menu {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.google-image {
+    width: 272px;
+    height: 92px;
+}
+
+.google-button {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.google-button:hover {
+    border: 1px solid #7f7f7f;
+}
+
+.language {
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.language a {
+    color: blue;
+}
+
+main {
+    min-height: calc(100vh - 10rem);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    padding: 0 1rem;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 40rem;
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 0.75rem;
+    border-radius: 10rem;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    width: 85%;
+    border: none;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer {
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    width: 100%;
+}
+
+.footer-row-left,
+.footer-row-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.bottom-row {
+    width: 80%;
+    margin: auto;
+}
+
+.line {
+    opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+    .bottom-row {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .language {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
